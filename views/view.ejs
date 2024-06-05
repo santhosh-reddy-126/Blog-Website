@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view blogs</title>
+</head>
+<body>
+    <% if(title.length==0) {%>
+        <h1>No Blogs to display</h1>
+    <%}else{%>
+        <% for(let i=0;i<title.length;i++){ %>
+        <a href="<%= title[i]%>"><%= title[i] %></a><br>
+        <%} %>
+    <%}%>  
+    <br/><br/><br/>
+    <a href="/">Home</a>
+</body>
+</html>
